@@ -6,6 +6,7 @@ import{ useParams} from "react-router-dom"
 import Store from './pages/StorePage/store';
 import Cart from './pages/cartPage/cart';
 import ProductDisplay from './pages/StorePage/productDisplay';
+import Footer from './component/footer';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
      
       <NavBar/>
       {contentComponenet}
-      
+      <Footer/>
     </>
   )
 }
