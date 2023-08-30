@@ -1,0 +1,34 @@
+.header{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+    
+    
+  }
+  .header h1{
+    color:white;
+    margin-left: 3vw;
+    
+  }
+  .header h1:hover{
+    color:white;
+    margin-left: 3vw;
+    cursor: pointer;
+    
+  }
+  
+  .header .navBar{
+    display: flex;
+    justify-content: center;
+    gap:3vw;
+  }
+  .nav h2:hover{
+    cursor: pointer;
+  }
+  .nav  {
+    color: white;
+  }
