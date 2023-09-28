@@ -52,9 +52,13 @@ export const ShopContextProvider = (props) => {
       };
     
    
-  const updateCartItemCount = (newAmount, itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
-  };
+      const updateCartItemCount = (newAmount, itemId) => {
+        if (newAmount === 0) {
+          removeFromCart(itemId); // Call the removeFromCart function to remove the item
+        } else {
+          setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+        }
+      };
 
   const checkout = () => {
     setCartItems({});

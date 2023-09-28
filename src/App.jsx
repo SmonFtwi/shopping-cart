@@ -5,7 +5,6 @@ import NavBar from './component/navBar';
 import{ useParams} from "react-router-dom"
 import Store from './pages/StorePage/store';
 import Cart from './pages/cartPage/cart';
-import ProductDisplay from './pages/StorePage/productDisplay';
 import Footer from './component/footer';
 
 
@@ -18,9 +17,8 @@ function App() {
     contentComponenet= <Store />
   ) :name === "cart" ?(
     contentComponenet =<Cart/>
-  ):name === "/productDisplay" ?(
-    contentComponenet =<ProductDisplay/>
-  ):
+  )
+  :
   (
     contentComponenet= <Home />
   )}
@@ -29,7 +27,7 @@ function App() {
     <>
      
       <NavBar/>
-      {contentComponenet}
+      <div className='mainContent'> {contentComponenet}</div>
       <Footer/>
     </>
   )

@@ -1,8 +1,12 @@
 body{
   margin: 0px;
   padding: 0px;
-  min-height: 100vh; /* Ensure the body fills the viewport height */
-   
+  position:relative;
+  min-height: 100vh;
+}
+
+.mainContent{
+  padding-bottom: 20vh;
 }
 
 

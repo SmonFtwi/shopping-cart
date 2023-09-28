@@ -43,7 +43,7 @@ export function ImageSlider() {
   return (
     <div className="slider-container">
       <button className="prev-button" onClick={prevSlide}>&lt;</button> {/* Use &lt; for "<" */}
-      <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="slide-image" />
+      <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="slide-image"  />
       <button className="next-button" onClick={nextSlide}>&gt;</button> {/* Use &gt; for ">" */}
     </div>
   );

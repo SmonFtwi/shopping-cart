@@ -4,7 +4,7 @@ import './footer.css'
 function Footer(){
     return(
         <div className="footer ">
-            <p>Develop by Smon Ftwi</p>
+            <p> Smon Ftwi</p>
             <a href="https://github.com/SmonFtwi" 
             style={{ textDecoration: 'none', color: 'inherit' }} 
             target="_blank" 

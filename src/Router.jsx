@@ -12,6 +12,7 @@ const Router = () => {
       path: '/:name',
       element: <App />,
     },
+
   ]);
 
   return <RouterProvider router={router} />;

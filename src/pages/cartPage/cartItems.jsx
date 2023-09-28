@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import  { useContext } from "react";
 import { ShopContext } from "../context";
+import {Trash} from "phosphor-react";
 
 export const CartItem = (props) => {
   const { id, image, price, title } = props.data;
@@ -16,7 +17,7 @@ export const CartItem = (props) => {
           <b>{title}</b>
         </p>
         <p> Price: ${price}</p>
-        
+        <div className="Btn">
         <div className="countHandler">
           <button onClick={() => removeFromCart(id)} > - </button>
           <input
@@ -24,6 +25,8 @@ export const CartItem = (props) => {
             onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
           />
           <button onClick={() => addToCart(id)}> + </button>
+        </div>
+         <Trash size={25}  className="remove" onClick={() => updateCartItemCount(0, id)}/> 
         </div>
       </div>
     </div>

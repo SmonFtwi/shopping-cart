@@ -1,9 +1,10 @@
 // ProductDisplay.js
 
 import { useParams } from 'react-router-dom';
-import products from '../../product'; // Import your product data or fetch it from your context
+import ProductArray from '../../product'; // Import your product data or fetch it from your context
 
 function ProductDisplay() {
+  const products  = ProductArray;
   const { productId } = useParams(); // Assuming your URL parameter is named "productId"
   const product = products.find((product) => product.id === parseInt(productId, 10));
 
